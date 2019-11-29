@@ -28,9 +28,9 @@ mod cli;
 
 pub use substrate_cli::{VersionInfo, IntoExit, error};
 
-// Joshy hacked this to say 0 It used to say 100
+// Joshy and Amar hacked this line. It used to say 100
 /// The parachain id of this parachain.
-pub const PARA_ID: ParaId = ParaId::new(0);
+pub const PARA_ID: ParaId = ParaId::new(1);
 
 fn main() -> Result<(), cli::error::Error> {
 	let version = VersionInfo {
