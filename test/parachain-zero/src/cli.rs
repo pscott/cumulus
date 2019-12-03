@@ -83,7 +83,9 @@ pub fn run<I, T, E>(args: I, exit: E, version: VersionInfo) -> error::Result<()>
 
 			// TODO
 			config.network.listen_addresses = Vec::new();
-			config.network.boot_nodes = vec![];
+			// Joshy removed the following line as suggested by Basti
+			// Hope is that collators on the same chain can peer.
+			//config.network.boot_nodes = vec![];
 			config.chain_spec = chain_spec::get_chain_spec();
 
 			match config.roles {
