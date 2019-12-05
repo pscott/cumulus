@@ -1,5 +1,5 @@
 [package]
-name = 'parachain-two-runtime'
+name = 'parachain-zero-runtime'
 version = '0.1.0'
 authors = ["Parity Technologies <admin@parity.io>"]
 edition = '2018'
@@ -29,7 +29,7 @@ offchain-primitives = { package = "substrate-offchain-primitives", git = "https:
 transaction-payment = { package = "srml-transaction-payment", git = "https://github.com/paritytech/substrate", default-features = false, branch = "bkchr-cumulus-branch" }
 
 # Cumulus dependencies
-cumulus-runtime = { path = "../../../runtime", default-features = false }
+cumulus-runtime = { path = "../../runtime", default-features = false }
 
 [build-dependencies]
 wasm-builder-runner = { package = "substrate-wasm-builder-runner", version = "1.0.3" }

@@ -7,12 +7,12 @@ members = [
 	"test/client",
 	"test/parachain/runtime",
 	"test/parachain/",
-	"test/parachain-zero",
-	"test/parachain-zero/runtime",
-	"test/parachain-one",
-	"test/parachain-one/runtime",
-	"test/parachain-two",
-	"test/parachain-two/runtime",
+	"parachain-zero",
+	"parachain-zero/runtime",
+	"parachain-one",
+	"parachain-one/runtime",
+	"parachain-two",
+	"parachain-two/runtime",
 ]
 
 [profile.release]

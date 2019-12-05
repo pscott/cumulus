@@ -39,8 +39,8 @@ basic-authorship = { package = "substrate-basic-authorship", git = "https://gith
 consensus-common = { package = "substrate-consensus-common", git = "https://github.com/paritytech/substrate", branch = "bkchr-cumulus-branch" }
 
 # Cumulus dependencies
-cumulus-consensus = { path = "../../consensus" }
-cumulus-collator = { path = "../../collator" }
+cumulus-consensus = { path = "../consensus" }
+cumulus-collator = { path = "../collator" }
 
 # Polkadot dependencies
 polkadot-primitives = { git = "https://github.com/paritytech/polkadot", branch = "bkchr-cumulus-branch" }

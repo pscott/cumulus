@@ -46,6 +46,8 @@ pub use balances::Call as BalancesCall;
 pub use sr_primitives::{Permill, Perbill};
 pub use support::{StorageValue, construct_runtime, parameter_types, traits::Randomness};
 
+mod template;
+
 /// An index to a block.
 pub type BlockNumber = u32;
 
@@ -229,6 +231,10 @@ impl sudo::Trait for Runtime {
 	type Proposal = Call;
 }
 
+impl template::Trait for Runtime {
+	type Event = Event;
+}
+
 construct_runtime! {
 	pub enum Runtime where
 		Block = Block,
@@ -241,6 +247,7 @@ construct_runtime! {
 		Balances: balances::{default, Error},
 		Sudo: sudo,
 		RandomnessCollectiveFlip: randomness_collective_flip::{Module, Call, Storage},
+		TemplateModule: template::{Module, Call, Storage, Event<T>},
 	}
 }
 

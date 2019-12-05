@@ -94,3 +94,15 @@ CAn't make balance transfer. Grrr. I'm using local apps and the same polkadot bu
 Alice's node says likewise: Failed to submit extrinsic: Extrinsic verification error: Execution: Could not convert parameter `tx` between node and runtime: Invalid transaction version
 Kill and restart Apps, now it won't even connect to a node.
 Grr. Restarting the whole computer.
+
+
+
+-------------------------------
+## Experimenting with custom runtimes again
+Parachain Zero: Just a Cryptocurrency
+
+Parachain One: PoE
+* Add PoE
+
+Parachain Two: Collator Template
+* Add template module
