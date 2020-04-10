@@ -44,10 +44,10 @@ cumulus-consensus = { path = "../../consensus" }
 cumulus-collator = { path = "../../collator" }
 
 # Polkadot dependencies
-polkadot-primitives = { git = "https://github.com/paritytech/polkadot", branch = "cumulus-branch" }
-polkadot-collator = { git = "https://github.com/paritytech/polkadot", branch = "cumulus-branch" }
-polkadot-service = { git = "https://github.com/paritytech/polkadot", branch = "cumulus-branch" }
-polkadot-cli = { git = "https://github.com/paritytech/polkadot", branch = "cumulus-branch" }
+polkadot-primitives = { git = "https://github.com/paritytech/polkadot", branch = "cecton-protocol-fixes" }
+polkadot-collator = { git = "https://github.com/paritytech/polkadot", branch = "cecton-protocol-fixes" }
+polkadot-service = { git = "https://github.com/paritytech/polkadot", branch = "cecton-protocol-fixes" }
+polkadot-cli = { git = "https://github.com/paritytech/polkadot", branch = "cecton-protocol-fixes" }
 
 [build-dependencies]
 vergen = '3.0.4'
